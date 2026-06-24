@@ -75,15 +75,3 @@ Our systematic ablation study of 8 variants highlights the following:
 1.  **Standard Convolution vs. Dilated Convolution**: During ablations, standard convolutions (`dilation=1` inside `TuaAttention`) outperformed dilated convolutions (`dilation=2`) by **15.8%** at epoch 40 (0.132 vs 0.114 mAP50). This suggests that for dense, sub-pixel targets in aerial imagery, contiguous spatial locality is superior to wide-area dilation.
 2.  **Skip Connections**: Removing residual skip connections in the TuaBottleneck blocks resulted in an **82.7% drop** in mAP50, confirming the absolute necessity of residual paths for Pre-LN structures.
 
----
-
-## 📜 Citation
-If you use Bhaskar-NET in your research, please cite our paper:
-```bibtex
-@article{patil2026bhaskarnet,
-  title={Bhaskar NET - An edge deployment focused network, utilized for small object detection},
-  author={Patil, Atharv Kamlesh and Varma, Satishkumar L.},
-  journal={arXiv preprint},
-  year={2026}
-}
-```
